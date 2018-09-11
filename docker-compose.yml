@@ -1,6 +1,18 @@
 version: '3.1'
 
 services:
+  schools:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_HOST=mongo
+      - LOG_LEVEL=debug
+      - SALT=kikoo plop
+    depends_on:
+      - mongo
+    networks:
+      - api
 
   mongo:
     image: mongo
@@ -11,3 +23,8 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: schoolsdb
+    networks:
+      - api
+
+networks:
+  api:
