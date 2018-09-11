@@ -68,3 +68,17 @@ Ensuite:
 
 - :sos: `git checkout -f project-03-solution`.
 - :fast_forward: `git checkout -f project-04-readme`.
+
+## Step 4
+
+On code tous pareil dans une équipe !
+
+- On va utiliser [prettier](https://prettier.io/) (on peut aussi [l'intégrer avec ESLint](https://prettier.io/docs/en/eslint.html)).
+- On installe prettier en `devDependencies`.
+- On ajoute un script: `"lint: "prettier --write lib/**/*.js index.js"`.
+- Lancer avec `npm run lint`.
+
+Ensuite:
+
+- :sos: `git checkout -f project-04-solution`.
+- :fast_forward: `git checkout -f project-05-readme`.
