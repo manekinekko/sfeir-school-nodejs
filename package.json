@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "prettier --write lib/**/*.js index.js",
     "start": "node index.js",
     "test": "jest --detectOpenHandles"
   },
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "jest": "^23.5.0",
+    "prettier": "^1.14.2",
     "supertest": "^3.3.0"
   }
 }
